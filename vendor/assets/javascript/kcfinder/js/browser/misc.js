@@ -304,7 +304,6 @@ browser.orderFiles = function(callBack, selected) {
         if (arr[0] == a1) return desc ? 1 : -1;
         return desc ? -1 : 1;
     });
-
     browser.showFiles(callBack, selected);
     browser.initFiles();
 };

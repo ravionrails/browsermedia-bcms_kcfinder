@@ -159,9 +159,7 @@ browser.selectAll = function(e) {
 
 // @fork - This has been altered to use a custom function to determine the URL to return.
 browser.returnFile = function(file) {
-
     var fileURL = browser.fileUrl(file);
-
     if (this.opener.CKEditor) {
         this.opener.CKEditor.object.tools.callFunction(this.opener.CKEditor.funcNum, fileURL, '');
         window.close();
